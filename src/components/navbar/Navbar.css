@@ -1,0 +1,272 @@
+.navLink {
+    color: white;
+    margin-right: 0px;
+    display: flex;
+    cursor: pointer;
+}
+
+.navLink.active {
+    color: #2485fd
+}
+
+.PrimaryNav {
+    z-index: 14;
+    height: 90px;
+    display: flex;
+    background: #8bc34a;
+    justify-content: space-between;
+    padding: 0.18rem calc((100vw - 1000px) / 2);
+}
+.MenuLink {
+
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1.2rem;
+    height: 100%;
+}
+
+.MenuLink.active {
+    color: #000000;
+}
+
+
+
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+
+}
+
+
+
+.text-effect{
+    background: -webkit-linear-gradient(45deg, #5ba4cf 0%, #298fca 17%, #0079bf 33%, #026aa7 67%, #5ba4cf 83%, #5ba4cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 40px;
+}
+.text-effect:hover{
+    background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 17%, #0079bf 33%, #ffffff 67%, #5ba4cf 83%, #5ba4cf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 40px;
+
+}
+
+.text-effect2{
+    background: -webkit-linear-gradient(45deg, #026aa7 0%, #298fca 17%, #0079bf 33%, #026AA7FF 67%, #026AA7FF 83%, #026AA7FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-effect2:hover{
+    background: -webkit-linear-gradient(45deg, #026aa7 0%, #298fca 17%, #ffffff 33%, #ffffff 67%, #026AA7FF 83%, #026AA7FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.text-effect2:active{
+    background: -webkit-linear-gradient(45deg, #026aa7 0%, #f3f3f3 17%, #f8f8f8 33%, #ffffff 67%, #026AA7FF 83%, #026AA7FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.searchImg {
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.searchImg:hover {
+    width: 52px;
+    height: 52px;
+}
+
+.buttonSignIn {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #2ac8fc 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin: 2px;
+}
+
+.buttonSignIn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.buttonSignIn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-3px);
+}
+
+.buttonSignIn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+.buttonSignUp {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #c0c8fa 0, #0ba4e8 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin: 2px;
+}
+
+.buttonSignUp:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.buttonSignUp:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-3px);
+}
+
+.buttonSignUp:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.titleText {
+    color: #b23e35;
+}
+
+.div1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+}
+
+.divChange {
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+
+
+}
+
+
+.buttonAccount {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #ffffff 0, #00050c 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    margin: 4px;
+}
+
+.buttonAccount:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.buttonAccount:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-3px);
+}
+
+.buttonAccount:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
