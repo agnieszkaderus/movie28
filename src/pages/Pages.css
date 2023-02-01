@@ -65,3 +65,82 @@
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
 }
+
+.buttonSeePoster {
+    width:200px;
+    height: 46px;
+    font-size: 26px;
+    background-image: radial-gradient(100% 100% at 100% 0, #2ac8fc 0, #5468ff 100%);
+    border: 5px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 48px;
+    box-shadow: 6px 0px 0px #6869da;
+    outline: transparent;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.buttonSeePoster:hover {
+    width:205px;
+    height: 48px;
+    font-size: 26px;
+    background-image: radial-gradient(100% 100% at 100% 0, #027fa4 0, #9fa9ff 100%);
+    border: 5px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 48px;
+    box-shadow: 5px 4px 4px #6869da;
+    outline: transparent;
+    position: relative;
+}
+
+.buttonClosePoster {
+    width:170px;
+    height: 46px;
+    font-size: 26px;
+    background-image: radial-gradient(100% 100% at 100% 0, #2ac8fc 0, #5468ff 100%);
+    border: 5px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 48px;
+    box-shadow: 6px 0px 0px #6869da;
+    outline: transparent;
+    position: absolute;
+}
+
+.buttonClosePoster:hover {
+    width:180px;
+    height: 50px;
+    font-size: 26px;
+    background-image: radial-gradient(100% 100% at 100% 0, #027fa4 0, #9fa9ff 100%);
+    border: 5px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 48px;
+    box-shadow: 5px 4px 4px #6869da;
+    outline: transparent;
+    position: absolute;
+}
+
+.posterDetails{
+    display: flex;
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5.5rem;
+    cursor:pointer;
+    min-width:300px;
+    height:500px;
+    z-index:0;
+    border: 1px solid rgb(99, 99, 99);
+    justify-content: center;
+}
+
+.posterDetails:hover {
+    transform: scale(1.3);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

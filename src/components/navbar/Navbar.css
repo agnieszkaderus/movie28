@@ -1,12 +1,17 @@
+.div {
+    text-decoration: none;
+}
 .navLink {
     color: white;
     margin-right: 0px;
     display: flex;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navLink.active {
-    color: #2485fd
+    color: #2485fd;
+    text-decoration: none;
 }
 
 .PrimaryNav {
@@ -15,10 +20,10 @@
     display: flex;
     background: #8bc34a;
     justify-content: space-between;
+    text-decoration: none;
     padding: 0.18rem calc((100vw - 1000px) / 2);
 }
 .MenuLink {
-
     color: #fff;
     display: flex;
     cursor: pointer;
@@ -26,12 +31,13 @@
     text-decoration: none;
     padding: 0 1.2rem;
     height: 100%;
+
 }
 
 .MenuLink.active {
     color: #000000;
+    text-decoration: none;
 }
-
 
 
 
@@ -39,7 +45,6 @@
     width: 20px;
     height: 20px;
     margin: 2px;
-
 }
 
 
@@ -50,6 +55,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     font-size: 40px;
+    text-decoration: none;
 }
 .text-effect:hover{
     background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 17%, #0079bf 33%, #ffffff 67%, #5ba4cf 83%, #5ba4cf 100%);
@@ -57,23 +63,26 @@
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     font-size: 40px;
-
+    text-decoration: none;
 }
 
 .text-effect2{
-    background: -webkit-linear-gradient(45deg, #026aa7 0%, #298fca 17%, #0079bf 33%, #026AA7FF 67%, #026AA7FF 83%, #026AA7FF 100%);
+    background: -webkit-linear-gradient(45deg, #ffffff 0%, #ffffff 17%, #ffffff 33%, #ffffff 67%, #ffffff 83%, #ffffff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 20px;
+    text-decoration: none;
 }
 
+
 .text-effect2:hover{
-    background: -webkit-linear-gradient(45deg, #026aa7 0%, #298fca 17%, #ffffff 33%, #ffffff 67%, #026AA7FF 83%, #026AA7FF 100%);
+    background: -webkit-linear-gradient(45deg, #5ba4cf 0%, #298fca 17%, #0079bf 33%, #ffffff 67%, #5ba4cf 83%, #5ba4cf 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 21px;
+    text-decoration: none;
 }
 
 .text-effect2:active{
@@ -82,7 +91,9 @@
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-size: 20px;
+    text-decoration: none;
 }
+
 
 .searchImg {
     width: 44px;
@@ -127,6 +138,7 @@
     will-change: box-shadow, transform;
     font-size: 18px;
     margin: 2px;
+    text-decoration: none;
 }
 
 .buttonSignIn:focus {

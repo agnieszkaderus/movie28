@@ -5,6 +5,7 @@ import { db } from './firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
 import { AiOutlineClose } from 'react-icons/ai';
 
+
 const SavedShows = () => {
     const [movies, setMovies] = useState([]);
     const { user } = UserAuth();
@@ -38,7 +39,7 @@ const SavedShows = () => {
 
     return (
         <>
-            <h2 className='text-white font-bold md:text-xl p-4'>My Shows</h2>
+            <h2 className='text-white bg-black font-bold md:text-xl p-4'>My movies</h2>
             <div className='relative flex items-center group'>
                 <MdChevronLeft
                     onClick={slideLeft}
@@ -52,11 +53,11 @@ const SavedShows = () => {
                     {movies.map((item) => (
                         <div
                             key={item.id}
-                            className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'
+                            className='w-[240px] sm:w-[300px] md:w-[3600px] lg:w-[420px] inline-block cursor-pointer relative p-2'
                         >
                             <img
                                 className='w-full h-auto block'
-                                src={`https://image.tmdb.org/t/p/w500/${item?.img}`}
+                                src={item?.image}
                                 alt={item?.title}
                             />
                             <div className='absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white'>

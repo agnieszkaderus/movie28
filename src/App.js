@@ -7,17 +7,17 @@ import Login from "./pages/account/Login";
 import Account from "./pages/account/Account";
 import Signup from "./pages/account/SignUp";
 import ProtectedRoute from "./components/ProtectedRoute";
-import SearchMovie from "./pages/SearchMovie";
-import Details from "./pages/Details";
-import Upcoming from "./pages/Upcoming";
-import Popular from "./pages/Popular";
-import TopRated from "./pages/TopRated";
-import Trending from "./pages/Trending";
-import Horror from "./pages/Horror";
+import Details from "./pages/moviePages.js/Details";
+import AddNewMovie from "./pages/moviePages.js/AddNewMovie";
+import DeleteMovie from "./pages/moviePages.js/DeleteMovie";
+
 
 
 export function App() {
     return (
+        // <MainMovie request={requests.requestMovies}/>
+
+// <MovieList/>
         <>
             <AuthContextProvider>
                 <Navbar />
@@ -25,13 +25,9 @@ export function App() {
                     <Route path='/' element={<Home />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/signup' element={<Signup />} />
-                    <Route path='/searchMovie' element={<SearchMovie />} />
-                    <Route path='/details' element={<Details />} />
-                    <Route path='/upcoming' element={<Upcoming />} />
-                    <Route path='/popular' element={<Popular />} />
-                    <Route path='/toprated' element={<TopRated />} />
-                    <Route path='/trending' element={<Trending />} />
-                    <Route path='/horror' element={<Horror />} />
+                    <Route path='/details/:id'  element={<Details />} />
+                    <Route path='/addMovie' element={<AddNewMovie />} />
+                    <Route path='/delete' element={<DeleteMovie />} />
                     <Route
                         path='/account'
                         element={
@@ -41,6 +37,7 @@ export function App() {
                         }
                     />
                 </Routes>
+
             </AuthContextProvider>
         </>
     );

@@ -3,22 +3,37 @@ import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 import "../Pages.css"
 import Form from "../../components/form/Form";
+import axios from "axios";
 
 const Signup = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [login, setLogin] = useState('');
+    const [name, setName] = useState('');
     const { user, signUp } = UserAuth();
     const navigate = useNavigate()
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            await signUp(email, password);
-            navigate('/account')
-        } catch (error) {
-            console.log(error);
-        }
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     try {
+    //         await signUp(email, password, login, name);
+    //         navigate('/account')
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // };
+
+
+    const addNewUser = () => {
+        axios.post("https://at.usermd.net/api/user/create", {
+            "name": name,
+            "email": email,
+            "password": password,
+        })
+            .then((response) => setLogin(response.data.id))
+            .catch((err) => console.log(err));
+    }
+
 
     return (
         <>
@@ -29,10 +44,12 @@ const Signup = () => {
                     alt='/'
                 />
                 <Form
+                    newUser={true}
                     titleName={"CREATE NEW ACCOUNT"}
-                    onSubmit={handleSubmit}
+                    onSubmit={addNewUser}
                     onChangeMail={(e) => setEmail(e.target.value)}
                     onChangePassword={(e) => setPassword(e.target.value)}
+                    onChangeName={(e) => setName(e.target.value)}
                     buttonName={"SIGN UP"}
                     linkTo={'/account'}
                     linkName={"Login "}/>

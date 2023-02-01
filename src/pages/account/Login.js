@@ -24,6 +24,8 @@ const Login = () => {
         }
     };
 
+    // https://at.usermd.net/api/user/create
+
     return (
         <div className='w-full h-screen'>
             <img
@@ -31,7 +33,9 @@ const Login = () => {
                 src='https://www.zuerich.com/sites/default/files/image/2022/web_zuerich_kino_blue_cinema_1280x960_42809.jpg'
                 alt='/'
             />
-            <Form onSubmit={handleSubmit}
+            <Form
+                newUser={false}
+                onSubmit={handleSubmit}
                   buttonName={"SIGN IN"}
                   linkTo={'/signup'}
                   onChangeMail={(e) => setEmail(e.target.value)}

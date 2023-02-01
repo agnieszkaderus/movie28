@@ -1,15 +1,16 @@
 import React from 'react'
-import Main from "../components/Main";
+import MainMovie from "../components/movie/mainMovie/MainMovie";
 import requests from "../Requests";
-import Row from "../components/Row";
-import row from "../components/Row";
+import Row from "../components/movie/movieRow/Row";
+import row from "../components/movie/movieRow/Row";
+import CarouselMain from "../components/carousel/CarouselMain";
 
 
 const LinkPage = ({request, title, rowID,}) => {
 
     return(
         <div>
-            <Main request={request}/>
+            <CarouselMain request={request}/>
             <Row title={title} rowID={rowID} fetchURL={request}/>
         </div>
     )

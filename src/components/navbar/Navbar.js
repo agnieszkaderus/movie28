@@ -20,27 +20,21 @@ const Navbar = () => {
     };
 
     return (
-        <div className='flex items-center justify-between p-4 z-[100] w-full absolute'>
+        <div className=' flex items-center justify-between p-4 z-[100] w-full absolute'>
             <Link to='/'>
-                <h1 className='text-effect'> MOVIE WEBSITE </h1>
+                <h1 className='text-effect' style={{textDecoration:"none"}}> MOVIES </h1>
             </Link>
-            <Link className='navLink' to="popular">
 
-                <h1 className='text-effect2'>Popular</h1>
-            </Link>
-            <Link className='navLink' to="toprated">
-                <h1 className='text-effect2'>Top Rated</h1>
-            </Link>
-            <Link className='navLink' to="upcoming">
-                <h1 className='text-effect2'>Upcoming</h1>
-            </Link>
-            <Link className='navLink' to="horror">
-                <h1 className='text-effect2'>Horror</h1>
-            </Link>
             {user?.email ? (
                 <div>
                     <Link to='/searchMovie'>
                         <img src={"https://cdn-icons-png.flaticon.com/512/8787/8787675.png"} className='searchImg'/>
+                    </Link>
+                    <Link to='/addMovie'>
+                        <button className='buttonSignIn'>ADD MOVIE</button>
+                    </Link>
+                    <Link to='/delete'>
+                        <button className='buttonSignIn'>MOVIE LIST</button>
                     </Link>
                     <Link to='/account'>
                         <button className='buttonSignIn'>ACCOUNT</button>
@@ -58,6 +52,9 @@ const Navbar = () => {
                     <Link to='/searchMovie'>
                         <img src={"https://cdn-icons-png.flaticon.com/512/8787/8787675.png"} className='searchImg'/>
                     </Link>
+                     <Link to='/delete'>
+                         <button className='buttonSignIn'>MOVIE LIST</button>
+                     </Link>
                     <Link to='/login'>
                         <button className='buttonSignIn'>SIGN IN</button>
                     </Link>
