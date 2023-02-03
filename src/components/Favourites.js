@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import { UserAuth } from '../context/AuthContext';
-import { db } from './firebase';
+import { UserAuth } from '../pages/account/firebase/AuthContext';
+import { db } from '../pages/account/firebase/firebase';
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore';
 import { AiOutlineClose } from 'react-icons/ai';
 
 
-const SavedShows = () => {
+const Favourites = () => {
     const [movies, setMovies] = useState([]);
     const { user } = UserAuth();
 
@@ -79,4 +79,4 @@ const SavedShows = () => {
     );
 };
 
-export default SavedShows;
+export default Favourites;

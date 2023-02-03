@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import { UserAuth } from '../../../context/AuthContext';
-import { db } from '../../firebase';
+import { UserAuth } from '../../../pages/account/firebase/AuthContext';
+import { db } from '../../../pages/account/firebase/firebase';
 import { arrayUnion, doc, updateDoc } from 'firebase/firestore';
 import {Link} from "react-router-dom";
 import 'tailwindcss/tailwind.css'
@@ -60,6 +60,7 @@ const MovieToRow = ({ item }) => {
                  src={item?.image}
                  alt={item?.title} />
 
+
             <div
                 className='backgroundImg'>
                     <p className='textTitle'>
@@ -70,12 +71,13 @@ const MovieToRow = ({ item }) => {
 
             <p onClick={saveShow}>
                     {like ? (
-                        <FaHeart className='absolute top-4 left-4 text-red-400'/>
+                        <FaHeart className='absolute top-4 left-4  text-red-400'/>
                     ) : (
                         <FaRegHeart className='absolute top-4 left-4 text-red-300'/>
                     )}
                 </p>
-        </div>
+
+       </div>
         }
         </>
     );

@@ -2,11 +2,11 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
-import {AuthContextProvider} from "./context/AuthContext";
+import {AuthContextProvider} from "./pages/account/firebase/AuthContext";
 import Login from "./pages/account/Login";
 import Account from "./pages/account/Account";
 import Signup from "./pages/account/SignUp";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./pages/account/firebase/ProtectedRoute";
 import Details from "./pages/moviePages.js/Details";
 import AddNewMovie from "./pages/moviePages.js/AddNewMovie";
 import DeleteMovie from "./pages/moviePages.js/DeleteMovie";
@@ -15,9 +15,6 @@ import DeleteMovie from "./pages/moviePages.js/DeleteMovie";
 
 export function App() {
     return (
-        // <MainMovie request={requests.requestMovies}/>
-
-// <MovieList/>
         <>
             <AuthContextProvider>
                 <Navbar />

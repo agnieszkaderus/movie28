@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import MovieToRow from '../movieToRow/MovieToRow';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import {FaHeart, FaRegHeart} from "react-icons/fa";
 
 const Row = ({ title, fetchURL, rowID }) => {
     const [movies, setMovies] = useState([]);
@@ -44,6 +45,7 @@ const Row = ({ title, fetchURL, rowID }) => {
                     id={'slider' + rowID}
                     className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative'                >
                     {movies.map((item, id) => (
+
                         <MovieToRow key={id} item={item}/>
                     ))}
                 </div>

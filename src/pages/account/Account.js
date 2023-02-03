@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import SavedShows from '../../components/SavedShows';
-import {UserAuth} from "../../context/AuthContext";
+import Favourites from '../../components/Favourites';
+import {UserAuth} from "./firebase/AuthContext";
 import {doc, onSnapshot} from "firebase/firestore";
-import {db} from "../../components/firebase";
+import {db} from "./firebase/firebase";
 
 const Account = () => {
     const { user } = UserAuth;
@@ -32,7 +32,7 @@ const Account = () => {
                     <h1 className='text-3xl md:text-5xl font-bold'>MY FAVOURITE MOVIES</h1>
                 </div>
             </div>
-            <SavedShows />
+            <Favourites />
                 </>
 
         </>

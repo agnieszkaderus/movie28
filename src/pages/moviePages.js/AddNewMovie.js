@@ -1,9 +1,4 @@
 import React, {useState} from 'react'
-import MainMovie from "../../components/movie/mainMovie/MainMovie";
-import requests from "../../Requests";
-import Row from "../../components/movie/movieRow/Row";
-import row from "../../components/movie/movieRow/Row";
-import CarouselMain from "../../components/carousel/CarouselMain";
 import MovieForm from "../../components/form/MovieForm";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";

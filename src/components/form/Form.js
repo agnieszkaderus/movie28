@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../../context/AuthContext';
+import { UserAuth } from '../../pages/account/firebase/AuthContext';
 import '../../pages/Pages.css'
 const Form = ({newUser, onSubmit, onChangeMail, onChangeName, onChangeLogin, onChangePassword, buttonName, titleName, linkTo, error, linkName}) => {
 
@@ -61,13 +61,7 @@ const Form = ({newUser, onSubmit, onChangeMail, onChangeName, onChangeLogin, onC
                             <button className='buttonSignUp'>
                                 {buttonName}
                             </button>
-                            <div className='flex justify-between items-center text-sm text-gray-600'>
-                                <p>
-                                    <input className='mr-2' type='checkbox'/>
-                                    Remember me
-                                </p>
 
-                            </div>
                             <div className='divChange'>
                                 <Link to={linkTo}>
                                     {linkName}

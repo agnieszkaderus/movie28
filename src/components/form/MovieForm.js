@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../../context/AuthContext';
+import { UserAuth } from '../../pages/account/firebase/AuthContext';
 import '../../pages/Pages.css'
 const MovieForm = ({onSubmit, onChangeTitle,onChangeImage,onChangeContent, onClick }) => {
 

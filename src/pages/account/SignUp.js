@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { UserAuth } from '../../context/AuthContext';
+import { UserAuth } from './firebase/AuthContext';
 import "../Pages.css"
 import Form from "../../components/form/Form";
 import axios from "axios";

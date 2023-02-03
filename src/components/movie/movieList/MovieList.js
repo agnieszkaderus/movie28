@@ -12,6 +12,7 @@ const MovieList = () => {
     }, [])
 
 
+
     const getData = () => {
         fetch(requests.requestMovies)
             .then(res => res.json())

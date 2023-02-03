@@ -1,8 +1,6 @@
 import React from 'react';
-import MainMovie from "../components/movie/mainMovie/MainMovie";
 import Row from "../components/movie/movieRow/Row";
 import requests from "../Requests";
-import CarouselMain from "../components/carousel/CarouselMain";
 import CarouselMain2 from "../components/carousel/CarouselMain2";
 
 const Home = () => {
